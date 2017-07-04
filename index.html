@@ -3,15 +3,22 @@
 <head>
 	<title>why are you looking up here? does anyone even read this...</title>
 <style>
+* {
+	margin: 0px;
+}
 body {
 	background-image: url("https://dl.dropboxusercontent.com/s/61rjwiw56n813r2/mockup.png");
 	background-repeat: no-repeat;
 	background-position: 0px -50px;
 }
 
+#top {
+	position: relative;
+	height: 170px;
+}
 #name {
 	position: absolute;
-	top: 110px;
+	bottom: 0px;
 	left: 210px;
 }
 
@@ -24,7 +31,7 @@ body {
 	/*background-color: green;*/
 }
 
-.menu {
+#menu {
 	/*float: right;*/
 	position: absolute;
 	top: 260px;
@@ -40,14 +47,16 @@ body {
 </style>
 </head>
 <body>
-	<h1 id="name">Kevin Thai</h1>
-	<a href="../about" id="button"></a>
-	<div class="menu">
-		<a href="../about" class="link" style="width:130px;"></a>
-		<a href="https://github.com/aruu" class="link" style="width:100px;"></a>
-		<a href="https://www.linkedin.com/in/kvnthai/" class="link" style="width:125px;"></a>
-		<a href="../about" class="link" class="link" style="width:120px;"></a>
+	<div id="top"><h1 id="name">Kevin Thai</h1></div>
+	<a id="button" href="../about"></a>
+
+	<div id="menu">
+		<a class="link" style="width:130px;" href="../about"></a>
+		<a class="link" style="width:100px;" href="https://github.com/aruu"></a>
+		<a class="link" style="width:125px;" href="https://www.linkedin.com/in/kvnthai/"></a>
+		<a class="link" style="width:120px;" href="../about"></a>
 	</div>
+
 	<br><br><br>
 	<h3>(clearly this is very under construction)</h3>
 </body>
