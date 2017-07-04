@@ -14,12 +14,14 @@ body {
 
 #top {
 	position: relative;
-	height: 170px;
+	height: 230px;/*
+	background-color: red;
+	opacity: 0.5;*/
 }
 #name {
 	position: absolute;
-	bottom: 0px;
 	left: 210px;
+	top: 130px;
 }
 
 #button {
@@ -32,15 +34,11 @@ body {
 }
 
 #menu {
-	/*float: right;*/
-	position: absolute;
-	top: 260px;
-	left: 875px;
+	float: right;
 }
 .link {
-	height: 45px;
-	/*float: right;*/
-	float: left;
+	margin: 5px;
+	float: right;
 	clear: both;
 	/*background-color: red;*/
 }
@@ -48,16 +46,29 @@ body {
 </head>
 <body>
 	<div id="top"><h1 id="name">Kevin Thai</h1></div>
-	<a id="button" href="../about"></a>
 
-	<div id="menu">
-		<a class="link" style="width:130px;" href="../about"></a>
-		<a class="link" style="width:100px;" href="https://github.com/aruu"></a>
-		<a class="link" style="width:125px;" href="https://www.linkedin.com/in/kvnthai/"></a>
-		<a class="link" style="width:120px;" href="../about"></a>
+	<div>
+		<a id="button" href="../about"></a>
+		<div id="menu">
+			<a class="link" href="https://github.com/aruu">
+				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+			</a>
+			<a class="link" href="https://www.linkedin.com/in/kvnthai/">
+				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+			</a>
+			<a class="link" href="https://dl.dropboxusercontent.com/s/zlncz417v9msutk/resume.pdf">
+				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+			</a>
+		</div>
+
+		<br><br><br>
+		<h3>(clearly this is very under construction)</h3>
 	</div>
-
-	<br><br><br>
-	<h3>(clearly this is very under construction)</h3>
 </body>
 </html>
