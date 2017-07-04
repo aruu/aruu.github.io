@@ -6,31 +6,14 @@
 * {
 	margin: 0px;
 }
-body {
+div {
+	overflow: auto;
+}
+#main {
 	background-image: url("https://dl.dropboxusercontent.com/s/61rjwiw56n813r2/mockup.png");
 	background-repeat: no-repeat;
-	background-position: 0px -50px;
-}
-
-#top {
-	position: relative;
-	height: 230px;/*
-	background-color: red;
-	opacity: 0.5;*/
-}
-#name {
-	position: absolute;
-	left: 210px;
-	top: 130px;
-}
-
-#button {
-	position: absolute;
-	top: 360px;
-	left: 400px;
-	height: 50px;
-	width: 210px;
-	/*background-color: green;*/
+	max-width: 1024px;
+	margin: auto;
 }
 
 #menu {
@@ -45,30 +28,35 @@ body {
 </style>
 </head>
 <body>
-	<div id="top"><h1 id="name">Kevin Thai</h1></div>
+	<div id = "main">
 
-	<div>
-		<a id="button" href="../about"></a>
-		<div id="menu">
-			<a class="link" href="https://github.com/aruu">
-				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
-			</a>
-			<a class="link" href="https://www.linkedin.com/in/kvnthai/">
-				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
-			</a>
-			<a class="link" href="https://dl.dropboxusercontent.com/s/zlncz417v9msutk/resume.pdf">
-				<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-				onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-				onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
-			</a>
+		<div style="position: relative; height: 270px; margin-bottom: 10px;">
+			<h1 style="position: absolute; left: 210px; top: 130px;">Kevin Thai</h1>
 		</div>
 
-		<br><br><br>
-		<h3>(clearly this is very under construction)</h3>
+		<div style="position: relative;">
+			<img style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
+			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"></a>
+			<div id="menu">
+				<a class="link" href="https://github.com/aruu">
+					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+				</a>
+				<a class="link" href="https://www.linkedin.com/in/kvnthai/">
+					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+				</a>
+				<a class="link" href="https://dl.dropboxusercontent.com/s/zlncz417v9msutk/resume.pdf">
+					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
+					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
+					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+				</a>
+			</div>
+			<h3>(clearly this is very under construction. sorry about that.)</h3>
+		</div>
+
 	</div>
 </body>
 </html>
