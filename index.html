@@ -20,10 +20,19 @@ div {
 	float: right;
 }
 .link {
+	position: relative;
 	margin: 5px;
 	float: right;
 	clear: both;
 	/*background-color: red;*/
+}
+.link #hover {
+	position: absolute;
+	left: 0px;
+	visibility: hidden;
+}
+.link:hover #hover {
+	visibility: visible;
 }
 </style>
 </head>
@@ -31,30 +40,29 @@ div {
 	<div id = "main">
 
 		<div style="position: relative; height: 270px; margin-bottom: 10px;">
-			<h1 style="position: absolute; left: 210px; top: 130px;">Kevin Thai</h1>
+			<h1 style="position: absolute; left: 210px; top: 125px;">Kevin Thai</h1>
 		</div>
 
 		<div style="position: relative;">
 			<img style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
+			<img style="position: absolute; top: 0px; left: 30px;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
 			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"></a>
 			<div id="menu">
 				<a class="link" href="https://github.com/aruu">
-					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+					<img src="https://dl.dropboxusercontent.com/s/95a6arrz6600gy6/github.png">
+					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
 				</a>
 				<a class="link" href="https://www.linkedin.com/in/kvnthai/">
-					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+					<img src="https://dl.dropboxusercontent.com/s/d11ypyysj6ri7r9/linkedin.png">
+					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
 				</a>
 				<a class="link" href="https://dl.dropboxusercontent.com/s/zlncz417v9msutk/resume.pdf">
-					<img src="https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png"
-					onmouseover="this.src='https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png'"
-					onmouseout="this.src='https://dl.dropboxusercontent.com/s/swahpmaw2moz71v/link.png'">
+					<img src="https://dl.dropboxusercontent.com/s/mww5izjl92b074i/resume.png">
+					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
 				</a>
 			</div>
-			<h3>(clearly this is very under construction. sorry about that.)</h3>
+			<br><br>
+			<h5>(clearly this site is under construction. and just a tad informal. sorry not sorry)</h5>
 		</div>
 
 	</div>
