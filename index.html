@@ -35,6 +35,14 @@ div {
 	visibility: visible;
 }
 </style>
+<script>
+function mouseOver() {
+	document.getElementById("button-border").style.visibility = "visible";
+}
+function mouseOut() {
+	document.getElementById("button-border").style.visibility = "hidden";
+}
+</script>
 </head>
 <body>
 	<div id = "main">
@@ -45,8 +53,9 @@ div {
 
 		<div style="position: relative;">
 			<img style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
-			<img style="position: absolute; top: 0px; left: 30px;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
-			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"></a>
+			<img id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
+			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"
+				 onmouseover="mouseOver()" onmouseout="mouseOut()"></a>
 			<div id="menu">
 				<a class="link" href="https://github.com/aruu">
 					<img src="https://dl.dropboxusercontent.com/s/95a6arrz6600gy6/github.png">
