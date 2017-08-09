@@ -6,9 +6,9 @@ function fixRelativeLinks() {
   	var attributes = elements[i].attributes;
 
 	  for (var j=0; j<attributes.length; j++) {
+  		var old = attributes[j].value;
 
-	  	if (attributes[j].name === "src" || attributes[j].name === "href") {
-	  		var old = attributes[j].value;
+	  	if (old.match(/assets\//) && attributes[j].name !== "id") {
 	  		attributes[j].value = old.replace(/assets\//, "https://aruu-b21e7.firebaseapp.com/assets/");
 	  	}
 
