@@ -10,7 +10,7 @@
 		overflow: auto;
 	}
 	#main {
-		background-image: url("https://dl.dropboxusercontent.com/s/61rjwiw56n813r2/mockup.png");
+		background-image: url("assets/mockup.png");
 		background-repeat: no-repeat;
 		max-width: 1024px;
 		margin: auto;
@@ -46,38 +46,34 @@
 	<script src="common.js"></script>
 </head>
 <body onload="fixRelativeLinks()">
-	<div id = "main">
+	<div id="main" class="asset">
 
 		<div style="position: relative; height: 270px; margin-bottom: 10px;">
 			<h1 style="position: absolute; left: 210px; top: 125px;">Kevin Thai</h1>
 		</div>
 
 		<div style="position: relative;">
-			<img class="asset" style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
-			<img class="asset" id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
+			<img class="asset" style="margin-left: 30px;" src="assets/button.png">
+			<img class="asset" id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="assets/button_hover.png">
 			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"
 				 onmouseover="mouseOver()" onmouseout="mouseOut()"></a>
 			<div id="menu">
 				<a class="link" href="https://github.com/aruu">
-					<img src="https://dl.dropboxusercontent.com/s/95a6arrz6600gy6/github.png">
-					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
+					<img class="asset" src="assets/github.png">
+					<img class="asset" id="hover" src="assets/link_hover.png">
 				</a>
 				<a class="link" href="https://www.linkedin.com/in/kvnthai/">
-					<img src="https://dl.dropboxusercontent.com/s/d11ypyysj6ri7r9/linkedin.png">
-					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
+					<img class="asset" src="assets/linkedin.png">
+					<img class="asset" id="hover" src="assets/link_hover.png">
 				</a>
-				<a class="link" href="https://dl.dropboxusercontent.com/s/zlncz417v9msutk/resume.pdf">
-					<img src="https://dl.dropboxusercontent.com/s/mww5izjl92b074i/resume.png">
-					<img id="hover" src="https://dl.dropboxusercontent.com/s/326soqeeafqjj59/link_hover.png">
+				<a class="link" class="asset" href="assets/resume.pdf">
+					<img class="asset" src="assets/resume.png">
+					<img class="asset" id="hover" src="assets/link_hover.png">
 				</a>
 			</div>
 			<br><br>
 			<h5>(clearly this site is under construction. and just a tad informal. sorry not sorry)</h5>
 		</div>
-
-	<div style="position: absolute; height: 54px; border: medium solid black">
-		<img class="asset" src="assets/sun.png">
-	</div>
 	</div>
 </body>
 </html>
