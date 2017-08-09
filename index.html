@@ -2,49 +2,50 @@
 <html>
 <head>
 	<title>why are you looking up here? does anyone even read this...</title>
-<style>
-* {
-	margin: 0px;
-}
-div {
-	overflow: auto;
-}
-#main {
-	background-image: url("https://dl.dropboxusercontent.com/s/61rjwiw56n813r2/mockup.png");
-	background-repeat: no-repeat;
-	max-width: 1024px;
-	margin: auto;
-}
+	<style>
+	* {
+		margin: 0px;
+	}
+	div {
+		overflow: auto;
+	}
+	#main {
+		background-image: url("https://dl.dropboxusercontent.com/s/61rjwiw56n813r2/mockup.png");
+		background-repeat: no-repeat;
+		max-width: 1024px;
+		margin: auto;
+	}
 
-#menu {
-	float: right;
-}
-.link {
-	position: relative;
-	margin: 5px;
-	float: right;
-	clear: both;
-	/*background-color: red;*/
-}
-.link #hover {
-	position: absolute;
-	left: 0px;
-	visibility: hidden;
-}
-.link:hover #hover {
-	visibility: visible;
-}
-</style>
-<script>
-function mouseOver() {
-	document.getElementById("button-border").style.visibility = "visible";
-}
-function mouseOut() {
-	document.getElementById("button-border").style.visibility = "hidden";
-}
-</script>
+	#menu {
+		float: right;
+	}
+	.link {
+		position: relative;
+		margin: 5px;
+		float: right;
+		clear: both;
+		/*background-color: red;*/
+	}
+	.link #hover {
+		position: absolute;
+		left: 0px;
+		visibility: hidden;
+	}
+	.link:hover #hover {
+		visibility: visible;
+	}
+	</style>
+	<script>
+	function mouseOver() {
+		document.getElementById("button-border").style.visibility = "visible";
+	}
+	function mouseOut() {
+		document.getElementById("button-border").style.visibility = "hidden";
+	}
+	</script>
+	<script src="common.js"></script>
 </head>
-<body>
+<body onload="fixRelativeLinks()">
 	<div id = "main">
 
 		<div style="position: relative; height: 270px; margin-bottom: 10px;">
@@ -52,8 +53,8 @@ function mouseOut() {
 		</div>
 
 		<div style="position: relative;">
-			<img style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
-			<img id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
+			<img class="asset" style="margin-left: 30px;" src="https://dl.dropboxusercontent.com/s/rr6vqynptrzfpat/button.png">
+			<img class="asset" id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="https://dl.dropboxusercontent.com/s/jv0ykg45se8h3m3/button_hover.png">
 			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"
 				 onmouseover="mouseOver()" onmouseout="mouseOut()"></a>
 			<div id="menu">
@@ -74,6 +75,9 @@ function mouseOut() {
 			<h5>(clearly this site is under construction. and just a tad informal. sorry not sorry)</h5>
 		</div>
 
+	<div style="position: absolute; height: 54px; border: medium solid black">
+		<img class="asset" src="assets/sun.png">
+	</div>
 	</div>
 </body>
 </html>
