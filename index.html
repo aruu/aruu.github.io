@@ -4,15 +4,22 @@
 	<title>why are you looking up here? does anyone even read this...</title>
 	<style>
 	* {
-		margin: 0px;
+		font-family: "Courier New", Courier, monospace;
 	}
 	div {
 		overflow: auto;
 	}
 	#main {
-		background-repeat: no-repeat;
 		max-width: 1024px;
 		margin: auto;
+	}
+
+	header {
+		margin: 50px auto;
+		position: relative;
+		width: 671px;
+		height: 270px;
+		background-repeat: no-repeat;
 	}
 
 	#menu {
@@ -45,11 +52,11 @@
 	<script src="common.js"></script>	
 </head>
 <body onload="fixRelativeLinks()">
-	<div id="main" class="asset" style="background-image: url(assets/mockup.png)">
+	<div id="main">
 
-		<div style="position: relative; height: 270px; margin-bottom: 10px;">
-			<h1 style="position: absolute; left: 210px; top: 125px;">Kevin Thai</h1>
-		</div>
+		<header class="asset" style="background-image: url(assets/mockup.png)">
+			<h1 style="position: absolute; left: 210px; top: 110px;">Kevin Thai</h1>
+		</header>
 
 		<div style="position: relative;">
 			<img class="asset" style="margin-left: 30px;" src="assets/button.png">
