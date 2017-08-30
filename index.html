@@ -40,14 +40,12 @@
 
 
 	#menu {
-		float: right;
+
 	}
 	.link {
 		position: relative;
 		margin: 5px;
-		float: right;
-		clear: both;
-		/*background-color: red;*/
+		float: left;
 	}
 	.link #hover {
 		position: absolute;
@@ -81,28 +79,32 @@
 			<div class="asset textimg" style="background-image: url(assets/text3.png); width: 700px;"></div>
 		</header>
 
+
+
+		<div id="menu">
+			<a class="link" href="https://github.com/aruu">
+				<img class="asset" src="assets/github_nohover.png">
+				<img class="asset" id="hover" src="assets/github_hover.png">
+			</a>
+			<a class="link" href="https://www.linkedin.com/in/kvnthai/">
+				<img class="asset" src="assets/linkedin_nohover.png">
+				<img class="asset" id="hover" src="assets/linkedin_hover.png">
+			</a>
+			<a class="link asset" href="assets/resume.pdf">
+				<img class="asset" src="assets/resume_nohover.png">
+				<img class="asset" id="hover" src="assets/resume_hover.png">
+			</a>
+		</div>
+
 		<div style="position: relative;">
 			<img class="asset" style="margin-left: 30px;" src="assets/button.png">
 			<img class="asset" id="button-border" style="position: absolute; top: 0px; left: 30px; visibility: hidden;" src="assets/button_hover.png">
 			<a style="position: absolute; top: 60px; left: 70px; height: 70px; width: 400px;" href="../about"
 				 onmouseover="mouseOver()" onmouseout="mouseOut()"></a>
-			<div id="menu">
-				<a class="link" href="https://github.com/aruu">
-					<img class="asset" src="assets/github.png">
-					<img class="asset" id="hover" src="assets/link_hover.png">
-				</a>
-				<a class="link" href="https://www.linkedin.com/in/kvnthai/">
-					<img class="asset" src="assets/linkedin.png">
-					<img class="asset" id="hover" src="assets/link_hover.png">
-				</a>
-				<a class="link asset" href="assets/resume.pdf">
-					<img class="asset" src="assets/resume.png">
-					<img class="asset" id="hover" src="assets/link_hover.png">
-				</a>
-			</div>
-			<br><br>
-			<h5>(clearly this site is under construction. and just a tad informal. sorry not sorry)</h5>
 		</div>
+		<br>
+		<h5>(clearly this site is under construction. and just a tad informal. sorry not sorry)</h5>
+
 	</div>
 </body>
 </html>
