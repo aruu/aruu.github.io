@@ -40,16 +40,19 @@
 
 
 	#menu {
-
+		display: table;
+		margin: auto;
+		max-width: 800px;
+		text-align: center;
 	}
 	.link {
 		position: relative;
-		margin: 5px;
-		float: left;
+		display: table-cell;
+		padding: 0 25px;
 	}
 	.link #hover {
 		position: absolute;
-		left: 0px;
+		left: 25px;
 		visibility: hidden;
 	}
 	.link:hover #hover {
