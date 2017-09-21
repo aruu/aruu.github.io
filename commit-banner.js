@@ -22,6 +22,7 @@ fetch(url)
 	  		t = document.createTextNode("Most recent public commit: ");
 	  a.href = commit.html_url;
 	  a.innerHTML = commit.html_url;
+	  a.style.fontSize = "14px";
 	  p.appendChild(t);
 	  p.appendChild(a);
 	  commitBanner.appendChild(p);
