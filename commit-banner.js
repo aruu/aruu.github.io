@@ -15,8 +15,9 @@ fetch(url)
   return event;
 })
 .then(function(event) {
+	var commits = event.payload.commits;
 	var repo_url = event.repo.url,
-	 		commmit_url = event.payload.commits[0].url;
+	 		commmit_url = commits[commits.length-1].url;
 
 	fetch(repo_url)
 	.then((resp) => resp.json())
