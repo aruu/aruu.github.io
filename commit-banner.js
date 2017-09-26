@@ -35,7 +35,7 @@ fetch(url)
 
 		  strong.appendChild(t1);
 		  a1.href = commit.html_url;
-		  a1.innerHTML = event.payload.commits[0].message;
+		  a1.innerHTML = commits[commits.length-1].message;
 		  a2.href = repo.html_url;
 		  a2.innerHTML = event.repo.name;
 		  p.appendChild(strong);
